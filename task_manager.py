@@ -47,7 +47,7 @@ class MainWindow(QMainWindow):
         # widgets on the right
         self.label1 = QLabel('Estimated time: ')
         self.days = QLineEdit()
-        self.regex = r"^[1-9]\d*$"
+        self.regex = r"^(0|[1-9]\d*)$"
         validator = QtGui.QRegularExpressionValidator(
             QtCore.QRegularExpression(self.regex)
         )

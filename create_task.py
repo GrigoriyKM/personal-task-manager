@@ -8,6 +8,8 @@ class TaskCreation(QWidget):
         QWidget.__init__(self)
         left, top, height, width = 700, 250, 300, 250
         self.setGeometry(left, top, width, height)
+        self.setFixedWidth(width)
+        self.setFixedHeight(height)
         self.setWindowTitle("add task")
         layout_v_tc = QVBoxLayout(self)
         layout_h1_tc = QHBoxLayout(self)
@@ -27,7 +29,7 @@ class TaskCreation(QWidget):
         layout_v_tc.addLayout(layout_h1_tc)
         self.label1 = QLabel('Estimated time: ')
         self.day = QLineEdit()
-        self.regex = r"^[1-9]\d*$"
+        self.regex = r"^(0|[1-9]\d*)$"
         validator = QtGui.QRegularExpressionValidator(
             QtCore.QRegularExpression(self.regex)
         )
