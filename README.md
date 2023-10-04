@@ -21,7 +21,6 @@ This application will help you to keep track of your tasks, set due dates, prior
 1. Run the application: python task_manager.py 
 2. Follow instructions in this README to manage your tasks.
 3. The application will save your task data automatically.
-4. Alternatively you can run task_manager.exe file
 
 ## Instructions
 Add task
